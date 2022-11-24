@@ -139,6 +139,7 @@ const createKeys = () => {
 
     if (numberValues.includes(keyValues[k])) {
       key.dataset.number = '';
+      key.setAttribute('id', 'operator');
     } else if (operatorValues.includes(keyValues[k])) {
       key.dataset.operator = '';
     } else {

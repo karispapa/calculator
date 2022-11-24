@@ -82,3 +82,9 @@ body {
   word-wrap: break-word;
   word-break: break-all;
 }
+#operator {
+  background-color: rgb(72, 72, 72);
+}
+#operator:hover {
+  background-color: rgb(56, 56, 56);
+}
