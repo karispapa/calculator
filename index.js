@@ -54,7 +54,11 @@ class Calculator {
       default:
         return;
     }
-    this.currentInput = results.toFixed(4);
+    if (!Number.isInteger(results)) {
+      this.currentInput = results.toFixed(2);
+    } else {
+      this.currentInput = results;
+    }
     this.operation = undefined;
     this.previousInput = '';
   }
